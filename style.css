@@ -1,0 +1,21 @@
+.app-container{
+    max-width: 350px;
+}
+
+.hr {
+    margin-top: 1rem;
+}
+/*
+* {
+    outline: 1px solid red;
+}
+*/
+.taskContainer{
+    display: flex;
+    gap: 1rem;
+}
+.listContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
