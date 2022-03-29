@@ -1,5 +1,9 @@
 .app-container{
     max-width: 350px;
+    outline: 2px solid rgb(78, 78, 245);
+    margin-top: 8px;
+    border-radius: 8px;
+    padding: 1rem;
 }
 
 .hr {
