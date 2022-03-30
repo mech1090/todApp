@@ -1,3 +1,36 @@
+
+
+const inputBarValue = document.querySelector('#new-Task')
+const inputFunc = ()=>{
+    console.log(inputBarValue.value)
+}
+const inputBarButton = document.querySelector('#task-button')
+
+
+const upperLi = document.querySelector('#task-list')
+inputBarButton.addEventListener('click',inputFunc)
+
+
+const newLi = document.createElement('li')
+const newSpan = document.createElement('span')
+const newBtn = document.createElement('button')
+
+const newTaskList = document.querySelector('#task-list')
+newTaskList.appendChild(newLi)
+newLi.appendChild(newSpan)
+newLi.appendChild(newBtn)
+
+newLi.classList.add('listContainer', 'list-group-item')
+newBtn.classList.add('btn', 'btn-danger')
+newBtn.textContent = 'x'
+
+
+
+
+
+
+/*
+
 const newTask = 
 document.querySelector('#new-Task')
 
@@ -20,5 +53,7 @@ taskList.appendChild(newtaskLi)
 newtaskLi.appendChild(newTaskSpan)
 newtaskLi.appendChild(newTaskbtn)
 
-newtaskLi.classList.add('listContainer')
-newtaskLi.classList.add('btn btn-primary')
+newtaskLi.classList.add('listContainer', 'list-group-item')
+newtaskLi.classList.add('btn', 'btn-danger')
+newTaskbtn.textContent='x'
+*/
