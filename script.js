@@ -1,16 +1,9 @@
 
 
+
+const inputFunc = ()=>
+{
 const inputBarValue = document.querySelector('#new-Task')
-const inputFunc = ()=>{
-    console.log(inputBarValue.value)
-}
-const inputBarButton = document.querySelector('#task-button')
-
-
-const upperLi = document.querySelector('#task-list')
-inputBarButton.addEventListener('click',inputFunc)
-
-
 const newLi = document.createElement('li')
 const newSpan = document.createElement('span')
 const newBtn = document.createElement('button')
@@ -23,6 +16,18 @@ newLi.appendChild(newBtn)
 newLi.classList.add('listContainer', 'list-group-item')
 newBtn.classList.add('btn', 'btn-danger')
 newBtn.textContent = 'x'
+
+newSpan.textContent = inputBarValue.value
+}
+
+
+const inputBarButton = document.querySelector('#task-button')
+
+
+const upperLi = document.querySelector('#task-list')
+inputBarButton.addEventListener('click',inputFunc)
+
+
 
 
 
