@@ -1,8 +1,3 @@
-const handleDeleteButtonFunc = element=>{
-    element.remove()
-
-}
-
 
 const inputFunc = ()=>
 {
@@ -21,10 +16,15 @@ deleteButton.classList.add('btn', 'btn-danger')
 deleteButton.textContent = 'x'
 
 newSpan.textContent = inputBarValue.value
+const _handleDeleteButtonFunc = element=>{
+    deleteButton.removeEventListener('click',_handleDeleteButtonFunc)
+    element.remove()
+
+}
 
 // add event listener to deleteButton to delete the row
 deleteButton.addEventListener('click',()=>{
-    handleDeleteButtonFunc(newLi)
+    _handleDeleteButtonFunc(newLi)
 })
 
 }
